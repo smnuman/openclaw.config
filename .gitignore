@@ -1,0 +1,30 @@
+# Git ignore - DO NOT COMMIT TOKENS OR SECRETS
+
+# Token files (contain sensitive data)
+tokens/
+*.env
+*.env.*
+
+# OpenClaw runtime data (device-specific)
+credentials/
+identity/
+logs/
+telegram/
+devices/
+canvas/
+
+# Session data
+*.session
+*.session-journal
+
+# Backup files
+*.bak
+*.bak.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment secrets
+.env
+.env.*
