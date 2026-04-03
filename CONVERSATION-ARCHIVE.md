@@ -249,4 +249,54 @@ Located in `~/.openclaw/`:
 
 ---
 
+## Update Log - April 3, 2026
+
+### GitHub Repository Setup
+
+- **Repo URL:** https://github.com/smnuman/openclaw.config
+- **Owner:** Numan Syed <smnuman@gmail.com>
+- **SSH key verified:** `id_ed25519` (smnuman@gmail.com)
+
+### agentkit Installation (OpenCode Only)
+
+agentkit was installed globally for OpenCode. It is NOT compatible with OpenClaw.
+
+**Installation locations:**
+- Skills: `~/.agents/skills/` (6 skills: autonomous-workflow, code-quality, documentation, gitops-master, issue-raiser, project-planning)
+- Rules: `~/.agents/rules/`
+- Plugins: `~/.agents/plugins/` (6 TypeScript plugins)
+- OpenCode config updated: `~/.config/opencode/opencode.json`
+
+**Installed plugins:**
+- `coding-police.ts`
+- `format-police.ts`
+- `git-police.ts`
+- `kubectl-police.ts`
+- `pkg-police.ts`
+- `version-police.ts`
+
+### assay Installation
+
+assay v0.5.5 installed for universal Lua scripting/API testing.
+
+- Binary location: `~/bin/assay`
+- Added to PATH in `~/.zshrc`
+- Works on both OpenCode and OpenClaw machines
+
+### OpenClaw Compatibility Note
+
+**agentkit is for OpenCode, Claude Code, and Codex CLI - NOT for OpenClaw.**
+
+OpenClaw has a different plugin/skill architecture. agentkit will NOT work with OpenClaw without modification.
+
+---
+
+## Important Reminder
+
+**ALWAYS document the conversation before the `/exit` command.**
+
+Secrets handling rule: No tokens, passwords, or API keys in any markdown files. Replace with `[REDACTED]` or `[YOUR_*]` placeholders.
+
+---
+
 *This document was auto-generated from conversation archive on 2026-04-02*
